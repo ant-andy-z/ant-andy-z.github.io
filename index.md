@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+This is Andy.
+I like: statistics, music, F1, and books. 
+And I plan to write something here. 
