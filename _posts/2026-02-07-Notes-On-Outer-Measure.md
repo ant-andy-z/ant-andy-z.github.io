@@ -5,7 +5,7 @@ date: 2026-02-07
 categories: 
   - maths
   - analysis
-  - Measure, Integration & Analysis
+  - axler
   - notes
 ---
 
