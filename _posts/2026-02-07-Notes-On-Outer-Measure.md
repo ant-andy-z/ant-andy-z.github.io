@@ -2,11 +2,11 @@
 layout: post
 title: Notes On Outer Measure
 date: 2026-02-07
-categories: 
-  - maths
-  - analysis
-  - axler
-  - notes
+tags:
+  -maths
+  -maths-analysis
+  -maths-analysis-axler
+  -maths-analysis-axler-notes
 ---
 
 
