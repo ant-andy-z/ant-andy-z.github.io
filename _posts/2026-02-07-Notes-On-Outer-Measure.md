@@ -2,7 +2,7 @@
 layout: post
 title: Notes On Outer Measure
 date: 2026-02-07
-tags: [Maths]
+tags: [Maths, MIRA, Analysis]
 ---
 
 
