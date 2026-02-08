@@ -1,3 +1,11 @@
+---
+layout: post
+title: Notes On Outer Measure
+date: 2026-02-08
+tags: [Maths]
+---
+
+
 [Download the PDF](/assets/pdfs/MIRA/notes/2A_outer measure.pdf)
 <iframe
   src="/assets/pdfs/MIRA/notes/2A_outer measure.pdf"
