@@ -2,7 +2,11 @@
 layout: post
 title: Notes On Outer Measure
 date: 2026-02-07
-tags: [Measure Integration & Real Analysis]
+categories: 
+  - maths
+  - analysis
+  - Measure, Integration & Analysis
+  - notes
 ---
 
 
