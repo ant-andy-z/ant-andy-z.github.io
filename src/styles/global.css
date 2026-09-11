@@ -1,0 +1,255 @@
+:root {
+	color-scheme: light;
+	--bg: #f7f4ee;
+	--bg-elevated: #fffdf8;
+	--text: #1c1917;
+	--muted: #57534e;
+	--border: #e7e0d4;
+	--accent: #0f4c5c;
+	--accent-hover: #0b3944;
+	--link: #0f4c5c;
+	--code-bg: #efe8db;
+	--shadow: 0 1px 0 rgba(28, 25, 23, 0.06);
+	--max: 42rem;
+	--sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+	--serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+	--mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+:root[data-theme='dark'] {
+	color-scheme: dark;
+	--bg: #141311;
+	--bg-elevated: #1c1a17;
+	--text: #f5f0e8;
+	--muted: #b5aea4;
+	--border: #3a342c;
+	--accent: #8ec5c5;
+	--accent-hover: #b7dcdc;
+	--link: #8ec5c5;
+	--code-bg: #26221c;
+	--shadow: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--serif);
+	font-size: 1.125rem;
+	line-height: 1.7;
+}
+
+a {
+	color: var(--link);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+}
+
+a:hover {
+	color: var(--accent-hover);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+code,
+pre {
+	font-family: var(--mono);
+	font-size: 0.9em;
+}
+
+:not(pre) > code {
+	background: var(--code-bg);
+	padding: 0.12em 0.35em;
+	border-radius: 0.25rem;
+}
+
+pre {
+	background: var(--code-bg);
+	padding: 1rem 1.1rem;
+	overflow-x: auto;
+	border-radius: 0.5rem;
+	border: 1px solid var(--border);
+}
+
+.site-header,
+.site-footer,
+.site-main {
+	width: min(var(--max), calc(100% - 2.5rem));
+	margin-inline: auto;
+}
+
+.site-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1.5rem 0 1.25rem;
+	border-bottom: 1px solid var(--border);
+}
+
+.brand {
+	font-family: var(--sans);
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: var(--text);
+	text-decoration: none;
+	font-size: 1.05rem;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-family: var(--sans);
+	font-size: 0.95rem;
+}
+
+.nav a {
+	color: var(--muted);
+	text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current='page'] {
+	color: var(--text);
+}
+
+.theme-toggle {
+	appearance: none;
+	border: 1px solid var(--border);
+	background: var(--bg-elevated);
+	color: var(--text);
+	border-radius: 999px;
+	width: 2.25rem;
+	height: 2.25rem;
+	cursor: pointer;
+	display: grid;
+	place-items: center;
+	padding: 0;
+}
+
+.theme-toggle:hover {
+	border-color: var(--accent);
+}
+
+.site-main {
+	flex: 1;
+	padding: 2.25rem 0 3.5rem;
+}
+
+.site-footer {
+	padding: 1.5rem 0 2.25rem;
+	border-top: 1px solid var(--border);
+	color: var(--muted);
+	font-family: var(--sans);
+	font-size: 0.9rem;
+}
+
+.page-title {
+	font-size: clamp(2rem, 4vw, 2.6rem);
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	margin: 0 0 0.5rem;
+}
+
+.lede {
+	color: var(--muted);
+	margin: 0 0 2.25rem;
+	font-size: 1.15rem;
+}
+
+.post-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 1.25rem;
+}
+
+.post-card {
+	display: block;
+	padding: 1.15rem 0;
+	border-bottom: 1px solid var(--border);
+	text-decoration: none;
+	color: inherit;
+	box-shadow: var(--shadow);
+}
+
+.post-card h2 {
+	margin: 0 0 0.35rem;
+	font-size: 1.35rem;
+	letter-spacing: -0.02em;
+}
+
+.post-card p {
+	margin: 0;
+	color: var(--muted);
+}
+
+.post-meta {
+	font-family: var(--sans);
+	font-size: 0.85rem;
+	color: var(--muted);
+	margin: 0 0 0.4rem;
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	margin-top: 0.65rem;
+}
+
+.tag {
+	font-family: var(--sans);
+	font-size: 0.75rem;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: var(--accent);
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	padding: 0.15rem 0.55rem;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+	letter-spacing: -0.02em;
+	line-height: 1.25;
+}
+
+.prose h2 {
+	margin-top: 2rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+	margin: 0 0 1.1rem;
+}
+
+.prose .katex-display {
+	margin: 1.4rem 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.empty {
+	color: var(--muted);
+}

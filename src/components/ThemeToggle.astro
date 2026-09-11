@@ -1,0 +1,22 @@
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+	<span aria-hidden="true">◐</span>
+</button>
+
+<script>
+	const root = document.documentElement;
+
+	function currentTheme() {
+		return root.dataset.theme === 'dark' ? 'dark' : 'light';
+	}
+
+	function setTheme(theme: 'light' | 'dark') {
+		root.dataset.theme = theme;
+		localStorage.setItem('theme', theme);
+	}
+
+	document.querySelectorAll('[data-theme-toggle]').forEach((button) => {
+		button.addEventListener('click', () => {
+			setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+		});
+	});
+</script>

@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<BaseLayout title="Yudong Zhang" description="A personal blog for notes, writing, and math.">
+	<h1 class="page-title">Notes & writing</h1>
+	<p class="lede">Short posts, longer thoughts, and the occasional derivation.</p>
+
+	{
+		posts.length === 0 ? (
+			<p class="empty">No posts yet.</p>
+		) : (
+			<ul class="post-list">
+				{posts.map((post) => (
+					<li>
+						<a class="post-card" href={`/blog/${post.id}/`}>
+							<p class="post-meta">
+								<time datetime={post.data.pubDate.toISOString()}>
+									{post.data.pubDate.toLocaleDateString('en-US', {
+										year: 'numeric',
+										month: 'long',
+										day: 'numeric',
+									})}
+								</time>
+							</p>
+							<h2>{post.data.title}</h2>
+							<p>{post.data.description}</p>
+							{post.data.tags.length > 0 && (
+								<div class="tags">
+									{post.data.tags.map((tag) => (
+										<span class="tag">{tag}</span>
+									))}
+								</div>
+							)}
+						</a>
+					</li>
+				))}
+			</ul>
+		)
+	}
+</BaseLayout>
