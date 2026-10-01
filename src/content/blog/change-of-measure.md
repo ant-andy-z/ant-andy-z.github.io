@@ -14,9 +14,9 @@ Let $X \sim N(0,1)$ and let $Y = X + \theta.$ We want to change the measure from
 $$
 Z(\omega) = \exp\left\{ -\theta X(\omega) - \frac{\theta^2}{2} \right\},
 $$
-but this random variable was given without any justifications. I try to show why this constructions works. 
+but this construction was given without any justifications. I try to show why this constructions works. 
 
-The goal is to arrive at: $\tilde{\mathbb{P}}(Y\leq b)$ happens to be a C.D.F for a standard normal variable. We already know that $X$ is distributed as such. Out goal is now:
+The goal is to make $\tilde{\mathbb{P}}(Y\leq b)$ a C.D.F of a standard normal variable. We already know that $X$ is distributed as a standard normal variable. We can use that directly:
 $$
 \tilde{\mathbb{P}}(Y\leq b) = \mathbb{P}\left( X\leq b \right).
 $$
@@ -44,7 +44,10 @@ $$
 Let $x'=x-\theta,$ then transform the integration on the right hand side:
 
 $$
-\frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b} e^{-x^2/2} dx = \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b-\theta} e^{-(x'+\theta)^2/2} dx' = \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b-\theta} e^{-x'^2/2}e^{-\theta x'+1/2\theta^2} dx'.
+\begin{align}
+\frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b} e^{-x^2/2} dx &= \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b-\theta} e^{-(x'+\theta)^2/2} dx'\\
+&= \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b-\theta} e^{-x'^2/2}e^{-\theta x'+1/2\theta^2} dx'.
+\end{align}
 $$
 
 Equating, we get:
