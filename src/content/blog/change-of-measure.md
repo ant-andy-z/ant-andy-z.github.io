@@ -1,5 +1,6 @@
 ---
 title: Changing Measure to Make Non-standard Normal Distribution Standard Normal
+description: Helps one understand the construction of changing measures
 pubDate: 2026-10-01
 draft: false
 tags:
