@@ -44,10 +44,10 @@ $$
 Let $x'=x-\theta,$ then transform the integration on the right hand side:
 
 $$
-\begin{align}
+\begin{align*}
 \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b} e^{-x^2/2} dx &= \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b-\theta} e^{-(x'+\theta)^2/2} dx'\\
 &= \frac{1}{\sqrt{ 2\pi } }\int_{-\infty}^{b-\theta} e^{-x'^2/2}e^{-\theta x'+1/2\theta^2} dx'.
-\end{align}
+\end{align*}
 $$
 
 Equating, we get:
