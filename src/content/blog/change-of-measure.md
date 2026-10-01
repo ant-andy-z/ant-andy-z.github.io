@@ -56,11 +56,11 @@ $$
 $$
 Thus, $Z = e^{-\theta X-1/2\theta^2}$ to match the terms. (Note that integrating to $x$ and $x'$ is just a matter of notation. We can just treat $x'$ as $x$ in the last step and find $Z$.)
 
-By definition we can just defined:
+By definition we can let:
 $$
 \tilde{\mathbb{P}}(A) = \int_{A}Z(\omega)d\mathbb{P}(\omega).
 $$
-The verification of such transformation is given in the textbook, thus we won't discuss it here.
+The verification of this probability measure is given in the textbook, thus we won't discuss it here.
 
 
 
