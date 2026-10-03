@@ -1,6 +1,6 @@
 ---
 title: Decide Whether a Number is a Palindrome
-description: LeetCode #9
+description: LeetCode No.9
 pubDate: 2026-10-03
 draft: false
 tags:
