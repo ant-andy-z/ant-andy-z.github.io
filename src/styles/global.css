@@ -246,8 +246,13 @@ pre {
 
 .prose .katex-display {
 	margin: 1.4rem 0;
+	padding-block: 0.55em;
 	overflow-x: auto;
 	overflow-y: hidden;
+}
+
+.prose .katex-display > .katex {
+	padding-block: 0.15em;
 }
 
 .empty {
