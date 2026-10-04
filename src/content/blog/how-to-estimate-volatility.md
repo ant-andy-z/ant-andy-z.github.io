@@ -20,7 +20,7 @@ Divide $S(t)$ on both sides, we get:
 $$
 \frac{dS(t)}{S(t)} = \alpha dt + \sigma dW(t).
 $$
-The left hand side reminds us of $d(\log S(t)).$ However, notice that in Stochastic Calculus, taking differentiation of a stochastic process reaquires Ito-Doeblin's formula, not just chain rule. We consider $f(t, x) = \log x$, then $f_{t}(t, x) = 0,$ $f_{x}(t, x)= \frac{1}{x},$ $x_{x x} (t, x) = -\frac{1}{x^2},$ thus:
+The left hand side reminds us of $d(\log S(t)).$ However, notice that in Stochastic Calculus, taking differentiation of a stochastic process reaquires Ito-Doeblin's formula, not just chain rule. We consider $f(t, x) = \log x$, then $f_{t}(t, x) = 0,$ $f_{x}(t, x)= \frac{1}{x},$ $f_{x x} (t, x) = -\frac{1}{x^2},$ thus:
 $$
 \begin{align}
 d(\log S(t)) &= 0\cdot dt + \frac{1}{S(t)}dS(t) + \frac{1}{2}\left( -\frac{1}{S(t)^2} \right)dS(t)dS(t) \\ 
