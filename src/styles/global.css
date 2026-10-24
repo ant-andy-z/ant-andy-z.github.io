@@ -1,6 +1,5 @@
 :root {
 	color-scheme: light;
-<<<<<<< HEAD
 	--bg: #fff;
 	--bg-elevated: #fff;
 	--text: #000;
@@ -14,27 +13,10 @@
 	--max: 42rem;
 	--serif: "Times New Roman", Times, serif;
 	--mono: "Courier New", Courier, monospace;
-=======
-	--bg: #f7f4ee;
-	--bg-elevated: #fffdf8;
-	--text: #1c1917;
-	--muted: #57534e;
-	--border: #e7e0d4;
-	--accent: #0f4c5c;
-	--accent-hover: #0b3944;
-	--link: #0f4c5c;
-	--code-bg: #efe8db;
-	--shadow: 0 1px 0 rgba(28, 25, 23, 0.06);
-	--max: 42rem;
-	--sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
-	--serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-	--mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
->>>>>>> origin/main
 }
 
 :root[data-theme='dark'] {
 	color-scheme: dark;
-<<<<<<< HEAD
 	--bg: #171717;
 	--bg-elevated: #171717;
 	--text: #f5f5f5;
@@ -45,18 +27,6 @@
 	--link: #7aa7ff;
 	--new: #ff7777;
 	--code-bg: #292929;
-=======
-	--bg: #141311;
-	--bg-elevated: #1c1a17;
-	--text: #f5f0e8;
-	--muted: #b5aea4;
-	--border: #3a342c;
-	--accent: #8ec5c5;
-	--accent-hover: #b7dcdc;
-	--link: #8ec5c5;
-	--code-bg: #26221c;
-	--shadow: none;
->>>>>>> origin/main
 }
 
 *,
@@ -66,11 +36,7 @@
 }
 
 html {
-<<<<<<< HEAD
 	background: #fff;
-=======
-	scroll-behavior: smooth;
->>>>>>> origin/main
 }
 
 body {
@@ -81,31 +47,17 @@ body {
 	background: var(--bg);
 	color: var(--text);
 	font-family: var(--serif);
-<<<<<<< HEAD
 	font-size: 1.05rem;
 	line-height: 1.45;
-=======
-	font-size: 1.125rem;
-	line-height: 1.7;
->>>>>>> origin/main
 }
 
 a {
 	color: var(--link);
-<<<<<<< HEAD
 	text-decoration: underline;
 }
 
 a:hover {
 	color: var(--link);
-=======
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.18em;
-}
-
-a:hover {
-	color: var(--accent-hover);
->>>>>>> origin/main
 }
 
 img {
@@ -136,16 +88,11 @@ pre {
 .site-header,
 .site-footer,
 .site-main {
-<<<<<<< HEAD
 	width: min(48rem, calc(100% - 2rem));
-=======
-	width: min(var(--max), calc(100% - 2.5rem));
->>>>>>> origin/main
 	margin-inline: auto;
 }
 
 .site-header {
-<<<<<<< HEAD
 	display: block;
 	padding: 1rem 0 0.65rem;
 	border-bottom: 2px solid var(--border);
@@ -156,56 +103,24 @@ pre {
 	color: var(--text);
 	text-decoration: none;
 	font-size: 1.3rem;
-=======
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 1rem;
-	padding: 1.5rem 0 1.25rem;
-	border-bottom: 1px solid var(--border);
-}
-
-.brand {
-	font-family: var(--sans);
-	font-weight: 700;
-	letter-spacing: -0.02em;
-	color: var(--text);
-	text-decoration: none;
-	font-size: 1.05rem;
->>>>>>> origin/main
 }
 
 .nav {
 	display: flex;
-<<<<<<< HEAD
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: flex-end;
 	gap: 0.8rem;
-=======
-	align-items: center;
-	gap: 1rem;
-	font-family: var(--sans);
->>>>>>> origin/main
 	font-size: 0.95rem;
 }
 
 .nav a {
-<<<<<<< HEAD
 	color: var(--link);
-=======
-	color: var(--muted);
-	text-decoration: none;
->>>>>>> origin/main
 }
 
 .nav a:hover,
 .nav a[aria-current='page'] {
-<<<<<<< HEAD
 	color: var(--link);
-=======
-	color: var(--text);
->>>>>>> origin/main
 }
 
 .theme-toggle {
@@ -213,15 +128,9 @@ pre {
 	border: 1px solid var(--border);
 	background: var(--bg-elevated);
 	color: var(--text);
-<<<<<<< HEAD
 	border-radius: 2px;
 	width: 1.8rem;
 	height: 1.8rem;
-=======
-	border-radius: 999px;
-	width: 2.25rem;
-	height: 2.25rem;
->>>>>>> origin/main
 	cursor: pointer;
 	display: grid;
 	place-items: center;
@@ -234,7 +143,6 @@ pre {
 
 .site-main {
 	flex: 1;
-<<<<<<< HEAD
 	padding: 1.35rem 0 2.5rem;
 }
 
@@ -248,35 +156,13 @@ pre {
 .page-title {
 	font-size: 2rem;
 	line-height: 1.2;
-=======
-	padding: 2.25rem 0 3.5rem;
-}
-
-.site-footer {
-	padding: 1.5rem 0 2.25rem;
-	border-top: 1px solid var(--border);
-	color: var(--muted);
-	font-family: var(--sans);
-	font-size: 0.9rem;
-}
-
-.page-title {
-	font-size: clamp(2rem, 4vw, 2.6rem);
-	line-height: 1.2;
-	letter-spacing: -0.03em;
->>>>>>> origin/main
 	margin: 0 0 0.5rem;
 }
 
 .lede {
 	color: var(--muted);
-<<<<<<< HEAD
 	margin: 0 0 1.6rem;
 	font-size: 1rem;
-=======
-	margin: 0 0 2.25rem;
-	font-size: 1.15rem;
->>>>>>> origin/main
 }
 
 .post-list {
@@ -284,37 +170,20 @@ pre {
 	margin: 0;
 	padding: 0;
 	display: grid;
-<<<<<<< HEAD
 	gap: 0;
-=======
-	gap: 1.25rem;
->>>>>>> origin/main
 }
 
 .post-card {
 	display: block;
-<<<<<<< HEAD
 	padding: 0.8rem 0 0.9rem;
 	border-bottom: 1px dotted var(--border);
 	text-decoration: none;
 	color: inherit;
-=======
-	padding: 1.15rem 0;
-	border-bottom: 1px solid var(--border);
-	text-decoration: none;
-	color: inherit;
-	box-shadow: var(--shadow);
->>>>>>> origin/main
 }
 
 .post-card h2 {
 	margin: 0 0 0.35rem;
-<<<<<<< HEAD
 	font-size: 1.2rem;
-=======
-	font-size: 1.35rem;
-	letter-spacing: -0.02em;
->>>>>>> origin/main
 }
 
 .post-card p {
@@ -322,7 +191,6 @@ pre {
 	color: var(--muted);
 }
 
-<<<<<<< HEAD
 .new {
 	color: var(--new);
 	font-size: 0.8em;
@@ -331,11 +199,6 @@ pre {
 
 .post-meta {
 	font-size: 0.82rem;
-=======
-.post-meta {
-	font-family: var(--sans);
-	font-size: 0.85rem;
->>>>>>> origin/main
 	color: var(--muted);
 	margin: 0 0 0.4rem;
 }
@@ -343,7 +206,6 @@ pre {
 .tags {
 	display: flex;
 	flex-wrap: wrap;
-<<<<<<< HEAD
 	gap: 0.55rem;
 	margin-top: 0.55rem;
 }
@@ -384,27 +246,11 @@ pre {
 .cool-links a::after {
 	content: ']';
 	color: var(--text);
-=======
-	gap: 0.4rem;
-	margin-top: 0.65rem;
-}
-
-.tag {
-	font-family: var(--sans);
-	font-size: 0.75rem;
-	letter-spacing: 0.02em;
-	text-transform: uppercase;
-	color: var(--accent);
-	border: 1px solid var(--border);
-	border-radius: 999px;
-	padding: 0.15rem 0.55rem;
->>>>>>> origin/main
 }
 
 .prose h1,
 .prose h2,
 .prose h3 {
-<<<<<<< HEAD
 	line-height: 1.25;
 }
 
@@ -412,12 +258,6 @@ pre {
 	color: var(--link);
 }
 
-=======
-	letter-spacing: -0.02em;
-	line-height: 1.25;
-}
-
->>>>>>> origin/main
 .prose h2 {
 	margin-top: 2rem;
 }
@@ -431,11 +271,8 @@ pre {
 .prose .katex-display {
 	margin: 1.4rem 0;
 	padding-block: 0.55em;
-<<<<<<< HEAD
 	border-top: 1px dotted var(--border);
 	border-bottom: 1px dotted var(--border);
-=======
->>>>>>> origin/main
 	overflow-x: auto;
 	overflow-y: hidden;
 }

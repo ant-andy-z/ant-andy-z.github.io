@@ -5,29 +5,16 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-<<<<<<< HEAD
 const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 ---
 
 <BaseLayout title="Yudong Zhang" description="A personal blog for notes, writing, and math.">
-=======
----
-
-<BaseLayout title="Yudong Zhang" description="A personal blog for notes, writing, and math.">
-	<h1 class="page-title">Notes & writing</h1>
-	<p class="lede">Short posts, longer thoughts, and the occasional derivation.</p>
-
->>>>>>> origin/main
 	{
 		posts.length === 0 ? (
 			<p class="empty">No posts yet.</p>
 		) : (
 			<ul class="post-list">
-<<<<<<< HEAD
 				{posts.map((post, index) => (
-=======
-				{posts.map((post) => (
->>>>>>> origin/main
 					<li>
 						<a class="post-card" href={`/blog/${post.id}/`}>
 							<p class="post-meta">
@@ -39,13 +26,9 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 									})}
 								</time>
 							</p>
-<<<<<<< HEAD
 							<h2>
 								{post.data.title} {index === 0 && <span class="new">NEW!</span>}
 							</h2>
-=======
-							<h2>{post.data.title}</h2>
->>>>>>> origin/main
 							<p>{post.data.description}</p>
 							{post.data.tags.length > 0 && (
 								<div class="tags">
@@ -60,7 +43,6 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 			</ul>
 		)
 	}
-<<<<<<< HEAD
 
 	<section class="section-rule" id="collections" aria-labelledby="collections-heading">
 		<h2 id="collections-heading">Post Collections</h2>
@@ -78,6 +60,4 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 			<a href="https://pages.github.com">GitHub Pages</a>
 		</p>
 	</section>
-=======
->>>>>>> origin/main
 </BaseLayout>
