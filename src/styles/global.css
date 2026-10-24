@@ -244,7 +244,9 @@ pre {
 	color: var(--link);
 }
 
-.prose .math-inline {
+.prose p > .katex,
+.prose li > .katex {
+	display: inline-block;
 	white-space: nowrap;
 }
 
