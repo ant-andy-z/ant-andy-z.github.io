@@ -30,7 +30,7 @@ builds the static site and serves `dist/`.
    ```yaml
    ---
    title: Your title
-   description: One-sentence summary for the homepage and RSS.
+   description: One-sentence summary for the homepage.
    pubDate: 2026-09-12
    draft: false
    tags:
@@ -41,7 +41,7 @@ builds the static site and serves `dist/`.
 3. Write Markdown. Inline math uses `$...$`; display math uses `$$...$$`.
 4. Commit and push `main`. GitHub Actions builds and deploys.
 
-Set `draft: true` to keep a post off the homepage, RSS, and `/blog/` routes.
+Set `draft: true` to keep a post off the homepage and `/blog/` routes.
 
 ## Deploy on GitHub Pages
 

@@ -5,18 +5,16 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 ---
 
 <BaseLayout title="Yudong Zhang" description="A personal blog for notes, writing, and math.">
-	<h1 class="page-title">Notes & writing</h1>
-	<p class="lede">Short posts, longer thoughts, and the occasional derivation.</p>
-
 	{
 		posts.length === 0 ? (
 			<p class="empty">No posts yet.</p>
 		) : (
 			<ul class="post-list">
-				{posts.map((post) => (
+				{posts.map((post, index) => (
 					<li>
 						<a class="post-card" href={`/blog/${post.id}/`}>
 							<p class="post-meta">
@@ -28,7 +26,9 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 									})}
 								</time>
 							</p>
-							<h2>{post.data.title}</h2>
+							<h2>
+								{post.data.title} {index === 0 && <span class="new">NEW!</span>}
+							</h2>
 							<p>{post.data.description}</p>
 							{post.data.tags.length > 0 && (
 								<div class="tags">
@@ -43,4 +43,21 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 			</ul>
 		)
 	}
+
+	<section class="section-rule" id="collections" aria-labelledby="collections-heading">
+		<h2 id="collections-heading">Post Collections</h2>
+		<p class="collection-links">
+			{tags.map((tag) => <a href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a>)}
+			<a href="/posts/">all posts</a>
+		</p>
+	</section>
+
+	<section class="section-rule cool-links" id="links" aria-labelledby="links-heading">
+		<h2 id="links-heading">Cool Links</h2>
+		<p>
+			<a href="https://astro.build">Astro</a>{' '}
+			<a href="https://katex.org">KaTeX</a>{' '}
+			<a href="https://pages.github.com">GitHub Pages</a>
+		</p>
+	</section>
 </BaseLayout>
