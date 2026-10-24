@@ -22,11 +22,11 @@ $$
 $$
 The left hand side reminds us of $d(\log S(t)).$ However, notice that in Stochastic Calculus, taking differentiation of a stochastic process reaquires Ito-Doeblin's formula, not just chain rule. We consider $f(t, x) = \log x$, then $f_{t}(t, x) = 0,$ $f_{x}(t, x)= \frac{1}{x},$ $f_{x x} (t, x) = -\frac{1}{x^2},$ thus:
 $$
-\begin{align}
+\begin{align*}
 d(\log S(t)) &= 0\cdot dt + \frac{1}{S(t)}dS(t) + \frac{1}{2}\left( -\frac{1}{S(t)^2} \right)dS(t)dS(t) \\ 
 & = \frac{1}{S(t)}dS(t) +\frac{1}{2}\left( -\frac{1}{S(t)^2} \right)\sigma^2S(t)^2dW(t)dW(t)) \\
 &=\frac{dS(t)}{S(t)} -\frac{1}{2}\sigma^2dt.
-\end{align}
+\end{align*}
 $$
 Take integral, and we get:
 $$
@@ -54,11 +54,11 @@ $$
 $$
 Suppose we take the summation of all time intervals:
 $$
-\begin{align}
+\begin{align*}
 \sum_{j =0}^{m-1}\left( \log \frac{S(t_{j+1})}{S(t_{j})} \right)^2 &= \sigma^2\sum_{}^{}(W(t_{j+1})-W(t_{j}))^2 + \left( \alpha-\frac{1}{2}\sigma^2 \right)^2 \sum_{}^{}(t_{j+1}-t{j})^2 + \sigma(2\alpha-\sigma^2)\sum_{}^{}(t_{j+1}-t_{j})(W(t_{j+1})-W(t_{j})) \\
 &= \sigma^2dW(t)dW(t) + \left( \alpha-\frac{1}{2}\sigma^2 \right)^2 dtdt +\sigma(2\alpha-\sigma^2)dtdW(t) \\
 &= \sigma^2dt = \sigma^2(T_{2}-T_{1}). 
-\end{align}
+\end{align*}
 
 $$
 We have the volatility estimate:
