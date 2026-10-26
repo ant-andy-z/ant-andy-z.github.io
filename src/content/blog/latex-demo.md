@@ -2,6 +2,7 @@
 title: Rendering LaTeX with KaTeX
 description: Inline math, a display equation, and a short derivation to prove the pipeline.
 pubDate: 2026-09-12
+draft: true
 tags:
   - math
   - latex

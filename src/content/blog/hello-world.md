@@ -2,6 +2,7 @@
 title: Hello from this site
 description: A first post — why this blog exists and how new entries get added.
 pubDate: 2026-09-12
+draft: true
 tags:
   - meta
 ---
