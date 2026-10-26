@@ -21,6 +21,17 @@
 	box-sizing: border-box;
 }
 
+.katex,
+.katex *,
+.katex *::before,
+.katex *::after {
+	box-sizing: content-box;
+}
+
+.katex .mfrac > .vlist-t > .vlist-r:first-child > .vlist > span:first-child {
+	transform: translateY(0.12em);
+}
+
 html {
 	background: var(--bg);
 }
@@ -152,9 +163,9 @@ pre {
 }
 
 .post-list {
-	list-style: none;
+	list-style: disc;
 	margin: 0;
-	padding: 0;
+	padding-left: 2rem;
 	display: grid;
 	gap: 0;
 }
@@ -163,24 +174,32 @@ pre {
 	display: block;
 	padding: 0.8rem 0 0.9rem;
 	border-bottom: 1px dotted var(--border);
-	text-decoration: none;
 	color: inherit;
 }
 
 .post-card h2 {
 	margin: 0 0 0.35rem;
 	font-size: 1.2rem;
+	color: var(--text);
+	text-decoration: none;
+}
+
+.post-card h2 a {
+	color: var(--link);
+	text-decoration: underline;
 }
 
 .post-card p {
 	margin: 0;
-	color: var(--muted);
+	color: var(--text);
 }
 
 .new {
-	color: var(--new);
-	font-size: 0.8em;
-	font-weight: 700;
+	color: #000;
+	background: #ffff00;
+	font: 700 0.8em Arial, sans-serif;
+	padding: 0 0.15em;
+	vertical-align: 0.1em;
 }
 
 .pinned {
@@ -191,7 +210,7 @@ pre {
 
 .post-meta {
 	font-size: 0.82rem;
-	color: var(--muted);
+	color: var(--text);
 	margin: 0 0 0.4rem;
 }
 
@@ -268,6 +287,7 @@ pre {
 .prose .katex-display {
 	margin: 1.4rem 0;
 	padding-block: 0.55em;
+	max-width: 100%;
 	overflow-x: auto;
 	overflow-y: hidden;
 }

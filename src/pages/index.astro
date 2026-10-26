@@ -18,7 +18,12 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 			<ul class="post-list">
 				{posts.map((post) => (
 					<li>
-						<a class="post-card" href={`/blog/${post.id}/`}>
+						<article class="post-card">
+							<h2>
+								<a href={`/blog/${post.id}/`}>{post.data.title}</a>{' '}
+								{post.data.pinned && <span class="pinned">PINNED</span>}{' '}
+								{post.id === latestPost?.id && <span class="new">NEW!</span>}
+							</h2>
 							<p class="post-meta">
 								<time datetime={post.data.pubDate.toISOString()}>
 									{post.data.pubDate.toLocaleDateString('en-US', {
@@ -27,21 +32,12 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 										day: 'numeric',
 									})}
 								</time>
+								{post.data.tags.length > 0 && (
+									<> · {post.data.tags.map((tag, index) => <span><a class="tag" href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a>{index < post.data.tags.length - 1 && ', '}</span>)}</>
+								)}
 							</p>
-							<h2>
-								{post.data.title}{' '}
-								{post.data.pinned && <span class="pinned">PINNED</span>}{' '}
-								{post.id === latestPost?.id && <span class="new">NEW!</span>}
-							</h2>
 							<p>{post.data.description}</p>
-							{post.data.tags.length > 0 && (
-								<div class="tags">
-									{post.data.tags.map((tag) => (
-										<span class="tag">{tag}</span>
-									))}
-								</div>
-							)}
-						</a>
+						</article>
 					</li>
 				))}
 			</ul>
