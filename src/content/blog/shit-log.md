@@ -9,5 +9,5 @@ tags:
 
 ## Oct 25, 2026
 
-Did BnP Paribas Online Assessment for Quant roles. Couldn't solve both programming questions. 🥲
+Did BnP Paribas Online Assessment for Quant roles. Couldn't solve both programming questions. 🥲 \\
 Ordered caramel latte, but the barista forgot the change to oat milk. Gave me butterflies in my stomach. 
