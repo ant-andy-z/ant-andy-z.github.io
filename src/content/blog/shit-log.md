@@ -3,6 +3,7 @@ title: $!#@ 💩 Happens
 description: A record of $!#@ 💩 things in my life. 
 pubDate: 2026-10-26
 draft: false
+pinned: true
 tags:
   - life
 ---
