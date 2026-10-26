@@ -183,6 +183,12 @@ pre {
 	font-weight: 700;
 }
 
+.pinned {
+	color: var(--new);
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
 .post-meta {
 	font-size: 0.82rem;
 	color: var(--muted);

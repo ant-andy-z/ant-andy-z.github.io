@@ -2,8 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+const latestPost = [...posts].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
+posts.sort(
+	(a, b) => Number(b.data.pinned) - Number(a.data.pinned) || b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 ---
@@ -14,7 +16,7 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 			<p class="empty">No posts yet.</p>
 		) : (
 			<ul class="post-list">
-				{posts.map((post, index) => (
+				{posts.map((post) => (
 					<li>
 						<a class="post-card" href={`/blog/${post.id}/`}>
 							<p class="post-meta">
@@ -27,7 +29,9 @@ const tags = [...new Set(posts.flatMap((post) => post.data.tags))].sort();
 								</time>
 							</p>
 							<h2>
-								{post.data.title} {index === 0 && <span class="new">NEW!</span>}
+								{post.data.title}{' '}
+								{post.data.pinned && <span class="pinned">PINNED</span>}{' '}
+								{post.id === latestPost?.id && <span class="new">NEW!</span>}
 							</h2>
 							<p>{post.data.description}</p>
 							{post.data.tags.length > 0 && (

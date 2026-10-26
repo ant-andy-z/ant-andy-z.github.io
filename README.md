@@ -33,6 +33,7 @@ builds the static site and serves `dist/`.
    description: One-sentence summary for the homepage.
    pubDate: 2026-09-12
    draft: false
+   pinned: false
    tags:
      - optional
    ---
@@ -42,6 +43,7 @@ builds the static site and serves `dist/`.
 4. Commit and push `main`. GitHub Actions builds and deploys.
 
 Set `draft: true` to keep a post off the homepage and `/blog/` routes.
+Set `pinned: true` to keep a published post at the top of the homepage. The newest post still receives the `NEW!` label.
 
 ## Deploy on GitHub Pages
 
