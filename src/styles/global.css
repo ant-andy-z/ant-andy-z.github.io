@@ -1,7 +1,7 @@
 :root {
 	color-scheme: light;
-	--bg: #fff;
-	--bg-elevated: #fff;
+	--bg: #c6c6c6;
+	--bg-elevated: #c6c6c6;
 	--text: #000;
 	--muted: #333;
 	--border: #000;
@@ -22,7 +22,7 @@
 }
 
 html {
-	background: #fff;
+	background: var(--bg);
 }
 
 body {
@@ -80,15 +80,16 @@ pre {
 
 .site-header {
 	display: block;
-	padding: 1rem 0 0.65rem;
-	border-bottom: 2px solid var(--border);
+	padding: 1.1rem 0 0.65rem;
 }
 
 .brand {
 	font-weight: 700;
 	color: var(--text);
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1.9rem;
+	line-height: 1.05;
+	margin: 0;
 }
 
 .nav {
@@ -134,7 +135,6 @@ pre {
 
 .site-footer {
 	padding: 1rem 0 1.5rem;
-	border-top: 1px solid var(--border);
 	color: var(--muted);
 	font-size: 0.8rem;
 }
@@ -210,7 +210,6 @@ pre {
 .section-rule {
 	margin-top: 2rem;
 	padding-top: 0.85rem;
-	border-top: 1px solid var(--border);
 }
 
 .section-rule h2 {
