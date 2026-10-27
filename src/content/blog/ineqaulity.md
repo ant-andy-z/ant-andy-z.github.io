@@ -29,8 +29,8 @@ $$
 &\leq \frac{1}{\epsilon} \int_{\Omega} |X| \,d\mathbb{P}(\omega) = \frac{\mathbb{E}\left[ |X| \right]}{\epsilon}. \\
 \end{align*}
 $$
-The last inequality holds because:
-(1) for any $\omega,$ if $|X|(\omega)>\epsilon,$ then $\epsilon \mathbb{1}_{|X|>\epsilon}(\omega) = \epsilon < |X|(\omega);$
+The last inequality holds because:\
+(1) for any $\omega,$ if $|X|(\omega)>\epsilon,$ then $\epsilon \mathbb{1}_{|X|>\epsilon}(\omega) = \epsilon < |X|(\omega);$\
 (2) for any $\omega$, if $|X|(\omega)\leq \epsilon,$ then $\epsilon \mathbb{1}_{|X|>\epsilon}(\omega) = 0 \leq |X|(\omega).$
 Thus, for any $\omega \in \Omega,$ $\epsilon \mathbb{1}_{|X|>\epsilon}(\omega) \leq |X|(\omega).$ Use monotonicity of integration. 
 $\square$
@@ -130,6 +130,7 @@ $$\|XY\|_{1} \leq \|X\|_{p}\|Y\|_{q}$$
 (because $\|X\|_{p}, \|Y\|_{q}$ are constants.)
 
 $\square$
+
 $\underline{Remark}:$ The intermediate result $ab \leq \frac{1}{p}a^p + \frac{1}{q}b^q, \text{ for any }a >0 \text{ and }b>0$ is called Young's Inequality. 
 
 ## Power and Sum
