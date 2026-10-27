@@ -1,4 +1,13 @@
-
+---
+title: Discourse on Inequalities
+description: Some useful inequality tools in probability theory
+pubDate: 2026-10-27
+draft: false
+pinned: false
+tags:
+  - math
+  - probability
+---
 We present some useful inequalities in probability theory. The following notations are used. 
 
 | Notation                     | Meaning                                                                                                               |
