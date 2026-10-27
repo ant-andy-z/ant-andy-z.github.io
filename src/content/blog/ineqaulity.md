@@ -22,12 +22,12 @@ We present some useful inequalities in probability theory. The following notatio
 
 **Proof**
 $$
-\begin{align}
+\begin{align*}
 \mathbb{P}\left[ |X| > \epsilon \right] &= \mathbb{E}\left[ \mathbb{1}_{|X|>\epsilon} \right] \\
 &= \int_{\Omega}\mathbb{1}_{|X|>\epsilon} \,d\mathbb{P}(\omega) \\
 &\leq \frac{1}{\epsilon} \int_{\Omega} \epsilon\mathbb{1}_{|X|>\epsilon} \,d\mathbb{P}(\omega) \\
 &\leq \frac{1}{\epsilon} \int_{\Omega} |X| \,d\mathbb{P}(\omega) = \frac{\mathbb{E}\left[ |X| \right]}{\epsilon}. \\
-\end{align}
+\end{align*}
 $$
 The last inequality holds because:
 (1) for any $\omega,$ if $|X|(\omega)>\epsilon,$ then $\epsilon \mathbb{1}_{|X|>\epsilon}(\omega) = \epsilon < |X|(\omega);$
@@ -61,10 +61,10 @@ $\square$
 We present a proof from Shreve. If $u$ is a convex function, then for any $x,$ $$u(x)=\sup\{\ell(x): \ell(s) \text{ is a linear function } \leq u\}.$$
 Then, 
 $$
-\begin{align}
+\begin{align*}
 \mathbb{E}\left[ u(X) \right] & \geq \mathbb{E}\left[ \ell(X) \right] \\
 &= \ell(\mathbb{E}\left[ X \right]) , \text{ for any } \ell \text{ satisfying } \ell\leq u.
-\end{align}
+\end{align*}
 $$
 Take the supremum on both sides. We have
 $$
