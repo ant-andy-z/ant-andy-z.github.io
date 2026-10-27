@@ -70,7 +70,9 @@ Take the supremum on both sides. We have
 $$
  \mathbb{E}\left[ u(X) \right] \geq \sup\{\ell(\mathbb{E}\left[ X \right]): \ell \text{ satisfies } \ell\leq u\}
  = u(\mathbb{E}\left[ X \right]).
-$$$\square$
+$$
+
+$\square$
 
 $\underline{Remark}:$ An immediate consequence is $\mathrm{Var}\left( X \right) = \mathbb{E}\left[ X^2 \right] - \mathbb{E}\left[ X \right]^2 \geq 0,$ due to convexity of $u(x)=x^2$. If one struggles to remember which side is bigger in the original statement, this is a simple example.
 
