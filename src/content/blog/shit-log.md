@@ -12,3 +12,6 @@ tags:
 
 Did BnP Paribas Online Assessment for Quant roles. Couldn't solve both programming questions. 🥲 \
 Ordered caramel latte, but forgot changing to oat milk. Gave me butterflies in my stomach. 
+
+## Oct 27, 2026
+Umbrella has a broken rib. Fortunately I don't have one. 
