@@ -38,11 +38,16 @@ The definition is easy to understand, but hard to use. Sigma algebras are often 
 > $$ f^{-1}(G) \in \mathcal{F} \quad \text{ for any } G \in \mathcal{G}.  $$
 
 **Proof**
+
 ($\implies$) Measurability of $f$ implies $f^{-1}(A') \in \mathcal{F} \text{ for any } A' \in \sigma(\mathcal{G})$. Since $\mathcal{G} \subseteq \sigma(\mathcal{G})$, the statement is true applying to $G \in \mathcal{G} \subseteq \sigma(\mathcal{G}).$
+
 ($\impliedby$) Let $\Sigma = \{ A' \in \sigma(\mathcal{G}): f^{-1}(A') \in \mathcal{F} \}.$ 
 Claim: $\Sigma$ is a sigma algebra. 
+
 ($\Sigma_{1}$) Since $\sigma(\mathcal{G})$ is a sigma algebra, $X' \in \sigma(\mathcal{G})$. Moreover, $f^{-1}(X')=X \in \mathcal{F}$ because $\mathcal{F}$ is a sigma algebra. Thus, $X' \in \Sigma$. 
+
 ($\Sigma_{2}$) If $A \in \Sigma$, then $f^{-1}(A) \in \mathcal{F}.$ $f^{-1}(A^c)= {f^{-1}(A)}^c \in \mathcal{F}$ because $\mathcal{F}$ is a sigma algebra. Thus, $A^c \in \Sigma$. 
+
 ($\Sigma_{3}$) Let $(A_{i}')_{i \in \mathbb{N}}$ be a sequence of sets in $\Sigma.$ For each $i$, $f^{-1}(A_{i}') \in \mathcal{F}$. Then $f^{-1}\left( \bigcup_{i\in \mathbb{N}}^{}A_{i}' \right) = \bigcup_{i}^{}f^{-1}(A_{i}') \in \mathcal{F}$ because $\mathcal{F}$ is a sigma algebra. Thus, $\bigcup_{i \in \mathbb{N}}^{}A_{i}' \in \Sigma.$
 
 By assumption, $\mathcal{G} \subseteq \Sigma$. By the minimality of $\sigma(\mathcal{G})$, $\sigma(\mathcal{G}) \subseteq \Sigma.$ By the way we defined $\Sigma$, we checked any $A' \in\sigma(\mathcal{G})$ satisfies the requirement. 
@@ -55,6 +60,7 @@ An immediate consequence follows from $\mathcal{B}(\mathbb{R}^n) = \sigma(\mathc
 > Let $f: \mathbb{R}^m\to \mathbb{R}^n$ be a continuous function. Then $f$ is measurable. 
 
 **Proof**
+
 For any open set $O^n$ in $\mathbb{R}^n,$ $f^{-1}(O^n)$ is open in $\mathbb{R}^m$ by continuity. Since $\mathcal{B}(\mathbb{R}^m) = \sigma(\mathcal{O}^m),$  $f^{-1}(O^n) \in \sigma(\mathcal{O}^m)=\mathcal{B}(\mathbb{R}^m).$ Use the previous proposition. 
 
 $\square$
@@ -81,8 +87,11 @@ Suppose $(X, \mathcal{F})$ is equipped with a measure $\mu$. We can "push" this 
 > Let $f:(X, \mathcal{F}, \mu)\to(X', \mathcal{F}')$ be a measurable mapping. $\mu\left(f^{-1}(F')\right)$ for each $F' \in \mathcal{F'}$ defines a measure on $(X', \mathcal{F}').$
 
 **Proof**
+
 ($M_{0}$) $\mathcal{F'}$ is a sigma algebra.  
+
 $(M_{1})$ $\mu\left(f^{-1}(\emptyset)\right)=\mu(\emptyset)=0$ because $\mu$ is a measure on $(X, \mathcal{F}).$
+
 ($M_{2}$) If $(A_{i}')_{i \in \mathbb{N}}$ is a sequence of disjoint sets in $\mathcal{F}'$:$$\mu\left(f^{-1}(\biguplus_{i \in \mathbb{N}}^{}A_{i}')\right)= \mu(\biguplus_{i \in \mathbb{N}}^{}f^{-1}(A_{i}'))=\sum_{i\in \mathbb{N}}^{}\mu(f^{-1}(A_{i}')).$$
 The first equality follows because inverse images preserve unions and disjointness. $\mu$ being a measure on $(X, \mathcal{F})$ gives the second equality. 
 
@@ -98,8 +107,11 @@ More generally, let $f:X\to X'$, where $(X',\mathcal{F}')$ is a measurable space
 
 **Proof**
 We show $f^{-1}(\mathcal{F'})$ is a sigma algebra. 
+
 $(\Sigma_{1})$ Since $X' \in \mathcal{F'},$ $f^{-1}(X')= X \in f^{-1}(\mathcal{F'}).$
+
 ($\Sigma_{2}$) If $A \in f^{-1}(\mathcal{F'}),$ there exists some $A' \in \mathcal{F'}$ such that $A = f^{-1}(A')$. $A^c = {f^{-1}(A')}^c= f^{-1}(A'^c) \in f^{-1}(\mathcal{F'})$ because $A'^c \in \mathcal{F'}$. 
+
 ($\Sigma_{3}$) If $(A_{i})_{i \in \mathbb{N}}$ is a sequence of sets in $f^{-1}(\mathcal{F'}),$ then for each $A_{i}$, there exists some $A_{i}'\in \mathcal{F}'$ such that $A_{i} = f^{-1}(A_{i}').$  
 $$
 \bigcup_{i \in \mathbb{N}}^{} A_{i} = \bigcup_{i \in \mathbb{N}}^{} f^{-1}(A_{i}') = f^{-1}\left( \bigcup_{i \in \mathbb{N}}^{} A_{i}' \right) \in f^{-1}(\mathcal{F'} ).
