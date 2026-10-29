@@ -1,3 +1,15 @@
+
+---
+title: Measurable Mappings
+description: Concepts related to it.
+pubDate: 2026-10-29
+draft: false
+pinned: false
+tags:
+  - maths
+  - probability
+---
+
 We use the following notations. 
 
 | Notation                  | Meaning                                                                     |
