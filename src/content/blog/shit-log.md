@@ -18,4 +18,5 @@ Umbrella has a broken rib. Fortunately I don't have one.
 
 ## Oct 30, 2026
 
-Had a dream of switch to Samsung. The very though of it gives me chill on my spin. Horrendous! Hopefully there is nothing wrong with me. 
+Had a dream of switch to Samsung. The very though of it gives me chill on my spin. Horrendous! Hopefully there is nothing wrong with me. \
+Straight reject from BnP. Not surprised. But I don't like their green logo anyways. So it's alright. 
