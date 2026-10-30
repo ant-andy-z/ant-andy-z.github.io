@@ -15,3 +15,7 @@ Ordered caramel latte, but forgot changing to oat milk. Gave me butterflies in m
 
 ## Oct 27, 2026
 Umbrella has a broken rib. Fortunately I don't have one. 
+
+## Oct 30, 2026
+
+Had a dream of switch to Samsung. The very though of it gives me chill on my spin. Horrendous! Hopefully there is nothing wrong with me. 
