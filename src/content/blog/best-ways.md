@@ -7,3 +7,14 @@ pinned: false
 tags:
   - life
 ---
+
+# Underground 
+
+$3 per trip. Starting from White City Station, you need to stop at Notting Hill Gate for transfer. Beware of which train you take. Do not take the train to Wimbledon. 
+Starting from Wood Lane, you need to transfer at Hammersmith. But you need to go outdoors, then re-enter another station across the street. 
+
+# Bus 49
+$1 per trip. Hop on at White City Bus Station. Night trip is fast due to less traffic. Morning trip not so fast. 
+
+# Imperial School Bus 
+Free. But you already feel like you are starting a day at school while commuting. 
